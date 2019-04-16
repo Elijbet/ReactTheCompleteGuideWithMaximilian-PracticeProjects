@@ -10,3 +10,7 @@
 8. Ensure that the new input entered by the user overwrites the old username passed to UserOutput.
 9.Add two-way-binding to your input (in UserInput) to also display the starting username. 
 10. Add styling of your choice to your components/elements in the components - both with inline styles and stylesheets.
+
+## To run locally
+
+`npm start`
