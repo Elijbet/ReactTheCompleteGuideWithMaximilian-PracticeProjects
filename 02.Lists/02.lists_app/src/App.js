@@ -16,6 +16,12 @@ class App extends Component {
     newState.txtArray = [...text]
     this.setState({txt: newState.txt, txtArray: newState.txtArray})
     }
+  deleteLetterHandler = (letterIndex) => {
+    // again, make a copy of the data and set the state with it, don/'t mutate directly
+    const txtArray = [...this.state.txtArray]
+    txtArray.splice(letterIndex, 1);
+    this.setState({txtArray: txtArray})
+  }
 
   render() {
     let items = null;
@@ -24,7 +30,11 @@ class App extends Component {
       {/*When you don’t have stable IDs for rendered items, you may use the item index as a key as a last resort*/}
       {/*I could technically assign ids to items while putting them in the array*/}
         {this.state.txtArray.map((item, index) => {
-          return <CharComponent key={index} letter={item}></CharComponent>
+          return  <CharComponent 
+                    click={() => this.deleteLetterHandler(index)}
+                    key={index} 
+                    letter={item}>
+                  </CharComponent>
         })}
       </div>
       )
