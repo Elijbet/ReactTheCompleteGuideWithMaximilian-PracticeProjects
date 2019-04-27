@@ -20,4 +20,5 @@ You will also see any lint errors in the console.
 * Project tree.
 * Setup Aux functional component so we can wrap multiple tags in it instead of using an enclosing div.
 * Build ingredient case function and prop-type validation.
+* Get the Burger Ingredients to show up.
 
