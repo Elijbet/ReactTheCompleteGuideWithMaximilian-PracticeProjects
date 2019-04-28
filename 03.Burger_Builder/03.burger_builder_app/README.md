@@ -21,4 +21,6 @@ You will also see any lint errors in the console.
 * Setup Aux functional component so we can wrap multiple tags in it instead of using an enclosing div.
 * Build ingredient case function and prop-type validation.
 * Get the Burger Ingredients to show up.
+* Outputting burger ingredients dynamically by first parsing through an object to make array of ingredients containing an array of items to represent the number of each in the burger.
+* transformedIngredients will be an array of empty arrays, making impossible to check for no ingredients. We need this to display "Please add ingredients". Reduce will flatten the array making possible to have the sum dynamically.
 
