@@ -23,4 +23,6 @@ You will also see any lint errors in the console.
 * Get the Burger Ingredients to show up.
 * Outputting burger ingredients dynamically by first parsing through an object to make array of ingredients containing an array of items to represent the number of each in the burger.
 * transformedIngredients will be an array of empty arrays, making impossible to check for no ingredients. We need this to display "Please add ingredients". Reduce will flatten the array making possible to have the sum dynamically.
+* Outputting multiple build controls.
+* Connecting state to build controls: addIngredientHandler to update the ingredients and the price and connect that to controls.
 
