@@ -25,5 +25,6 @@ You will also see any lint errors in the console.
 * transformedIngredients will be an array of empty arrays, making impossible to check for no ingredients. We need this to display "Please add ingredients". Reduce will flatten the array making possible to have the sum dynamically.
 * Outputting multiple build controls.
 * Connecting state to build controls: addIngredientHandler to update the ingredients and the price and connect that to controls.
-* Remove ingredients safely: removeIngredientHandler with same logic almost, only deducting and add that method controls. In case there are no ingredients we will run into an error if we keep subtracting: check for less or equal to 0 to return.
+* Remove ingredients safely: removeIngredientHandler with same logic almost, only deducting and add that method controls. In case there are no ingredients we will run into an error if we keep subtracting: check for less or equal to 0 to return. Setup disabling the buttons.
+* Display the updated burger price.
 
