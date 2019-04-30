@@ -29,4 +29,5 @@ You will also see any lint errors in the console.
 * Display the updated burger price.
 * Adding the order button.
 * Creating the Order Summary Modal.
+* Showing & Hiding the Modal (with Animation!)
 
