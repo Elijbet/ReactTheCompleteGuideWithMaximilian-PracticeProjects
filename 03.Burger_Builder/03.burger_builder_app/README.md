@@ -29,5 +29,8 @@ You will also see any lint errors in the console.
 * Display the updated burger price.
 * Adding the order button.
 * Creating the Order Summary Modal.
-* Showing & Hiding the Modal (with Animation!)
+* Showing & Hiding the Modal (with Animation!).
+* Implementing the backdrop component.
+* Adding a custom button component.
+* Implementing button component.
 
