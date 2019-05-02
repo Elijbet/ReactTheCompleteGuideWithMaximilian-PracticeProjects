@@ -33,4 +33,4 @@ You will also see any lint errors in the console.
 * Implementing the backdrop component.
 * Adding a custom button component.
 * Implementing button component.
-
+* Adding a toolbar.
