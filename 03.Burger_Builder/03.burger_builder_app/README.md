@@ -41,4 +41,8 @@ You will also see any lint errors in the console.
 * Reusing the Backdrop
 * Adding a SideDrawer Toggle Button.
 * Adding a Hamburger Icon.
-
+* Improving Performance.
+* Using Component Lifecycle Methods.
+> We used shouldComponentUpdate to tell component to update only under certain conditions.
+> We'll look at other lifecycle hooks and side-effects in relation to them next.
+>"Side Effect" is not a react-specific term. It is a general concept about behaviours of functions. A function is said to have side effect if it trys to modify anything outside its body. For example, if it modidifies a global variable, then it is a side effect. If it makes a network call, it is a side effect as well.
