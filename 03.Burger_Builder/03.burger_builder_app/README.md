@@ -37,4 +37,8 @@ You will also see any lint errors in the console.
 * Using a Logo in our Application.
 * Adding Reusable Naviation Items.
 * Creating Responsive SideDrawer and working on responsive adjustments.
+* More Responsive Adjustments.
+* Reusing the Backdrop
+* Adding a SideDrawer Toggle Button.
+* Adding a Hamburger Icon.
 
