@@ -34,3 +34,7 @@ You will also see any lint errors in the console.
 * Adding a custom button component.
 * Implementing button component.
 * Adding a toolbar.
+* Using a Logo in our Application.
+* Adding Reusable Naviation Items.
+* Creating Responsive SideDrawer and working on responsive adjustments.
+
