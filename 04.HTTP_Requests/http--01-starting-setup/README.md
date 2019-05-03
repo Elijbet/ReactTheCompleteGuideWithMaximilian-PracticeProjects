@@ -24,3 +24,8 @@ How to remove cached node_modules:
 `git push origin master`
 
 * Rendering Fetched Data to the screen.
+* Transforming data.
+* Making Post selectable.
+* Fetching Data on Update without creating an infinite loop. 
+
+> We want to fetch data in componentDidUpdate hook, but not update the state since then we'll enter an infinite loop.
