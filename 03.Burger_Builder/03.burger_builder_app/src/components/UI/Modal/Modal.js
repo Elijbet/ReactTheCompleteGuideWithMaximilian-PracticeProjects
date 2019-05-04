@@ -16,7 +16,9 @@ class Modal extends Component {
 	componentWillUpdate(){
 		console.log('[Modal] Will Update')
 	}
+	// The props are received in React’s class component via the this instance of the class. 
 	render(){
+		//console.log('this.props.show', this.props.show)
 		return (
 			<Aux>
 				<Backdrop show={this.props.show} clicked={this.props.modalClosed}/>

@@ -48,4 +48,6 @@ You will also see any lint errors in the console.
 >"Side Effect" is not a react-specific term. It is a general concept about behaviours of functions. A function is said to have side effect if it trys to modify anything outside its body. For example, if it modidifies a global variable, then it is a side effect. If it makes a network call, it is a side effect as well.
 * Changing the Folder Structure
 * Understanding HTTP requiests in React.
-
+> In single page apps a strong decoupling happens between your App and the server. Communication still happens but server doesn't send back HTML pages, but JSON data. The server is a restful API exposing endpoints to which you can send data.
+* Setting up firebase - syntax that maps api endpoints to database tables. 
+* Create axios instance with baseURL from firebase.
