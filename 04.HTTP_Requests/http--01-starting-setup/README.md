@@ -32,3 +32,7 @@ How to remove cached node_modules:
 
 * Posting data to the server.
 * Sending a delete request.
+* Handling errors locally.
+* Adding interceptors to execute code globally.
+* Setting a default global configuration for axios.
+* Creating and using axios instances.
