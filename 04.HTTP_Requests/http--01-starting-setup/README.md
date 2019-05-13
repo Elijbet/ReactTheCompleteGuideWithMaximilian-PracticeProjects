@@ -39,4 +39,6 @@ How to remove cached node_modules:
 * React is a component creation library - we're making it into a framework by adding a Routing package to it.
 * Routing and SPAs. We don't have multiple html files, but js to render different paths. We rerender parts of that single page. Routing is parsing the route/URL to render appropricate components. 
 * Setting up links.
-* Setting up the router package.
+* Setting up the router package. React-router vs react-router-dom.
+* Preparing the project for routing: some app restructuring.
+* Rendering components for routes.
