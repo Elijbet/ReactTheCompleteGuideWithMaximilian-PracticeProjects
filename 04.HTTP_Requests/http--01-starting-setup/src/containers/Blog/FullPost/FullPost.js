@@ -12,10 +12,10 @@ class FullPost extends Component {
     //updated, and so the componentDidUpdate hook runs again and we enter an
     //infinite loop. Make sure we send an http request if we actually loaded a
     //new post. So check props.id against loadedPost.id.
-    componentDidUpdate(){
-        if(this.props.id){
+    componentDidMount(){
+        if(this.props.match.params.id){
             if(!this.state.loadedPost || this.state.loadedPost && this.state.loadedPost.id !== this.props.id){
-                axios.get('/posts/' + this.props.id)
+                axios.get('/posts/' + this.props.match.params.id)
                     .then(response => {
                         // console.log('response', response)
                         this.setState({loadedPost: response.data});

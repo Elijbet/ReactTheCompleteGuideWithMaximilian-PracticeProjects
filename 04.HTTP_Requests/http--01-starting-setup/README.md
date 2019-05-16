@@ -42,3 +42,14 @@ How to remove cached node_modules:
 * Setting up the router package. React-router vs react-router-dom.
 * Preparing the project for routing: some app restructuring.
 * Rendering components for routes.
+* Switching between pages.
+* Making sure we don't reload the app. Use link instead of a tag so no reaload happens. You can see that reload button never spins now. Now react is rerendering parts of the page, if we reloaded the page we'd loose our state.
+* The "withRouter" HOC & Route props.
+* Absolute vs relative path. 
+>By default, if you just enter to="/some-path"  or to="some-path" , that's an absolute path. Absolute path means that it's always appended right after your domain. Therefore, both syntaxes (with and without leading slash) lead to example.com/some-path .
+>Sometimes, you might want to create a relative path instead. This is especially useful, if your component is already loaded given a specific path (e.g. posts ) and you then want to append something to that existing path (so that you, for example, get /posts/new ). <Link to={props.match.url + '/new'}>  will lead to example.com/posts/new
+* Styling the active route with NavLink, which appends active class to the link.
+* Change the appended class name with activeClassName. You can use activeStyle to apply inline styling to active NavLink.
+* Passing route params and extracting route params.
+* Query params: <Link to="/my-path?start=5">Go to Start
+
