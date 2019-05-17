@@ -51,3 +51,17 @@ You will also see any lint errors in the console.
 > In single page apps a strong decoupling happens between your App and the server. Communication still happens but server doesn't send back HTML pages, but JSON data. The server is a restful API exposing endpoints to which you can send data.
 * Setting up firebase - syntax that maps api endpoints to database tables. 
 * Create axios instance with baseURL from firebase.
+* Sending a post request.
+* Displaying a spinner while sending a request. Firebase is really fast so this may not be necessary, but we show it in case of any latency, such as user network being slow. [Cool Spinners](https://projects.lukehaas.me/css-loaders/).
+* Handling errors.
+* Retrieving data from backend.
+* Removing old interceptors.
+* Building the Checkout Container
+* Setting up Routing and Routes.
+* Navigating to the Checkout page. Using withRouter to access history and match on props.
+* Passing Ingredients via Query Params. 
+>The `encodeURIComponent` is a JS helper function that encodes any element passed to it so that it can be used in the URL
+* Navigating to the Contact Data
+* Order Submission & Passing Data between pages.
+> 'render' is passed a function with the `ContactData` component to be rendered.  Using  `rendeer` in place of `component` allows props tp be passed along with the component.  `{...props}` passes all props onto the `ContactData` component, allowing that component access to `props.history.push()`
+

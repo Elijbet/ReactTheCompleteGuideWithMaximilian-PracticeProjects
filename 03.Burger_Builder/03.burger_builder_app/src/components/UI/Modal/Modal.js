@@ -11,7 +11,7 @@ class Modal extends Component {
 	//should rely on the default behavior.
 	//shouldComponentUpdate here says only update if there is a change in show status of modal.
 	shouldComponentUpdate(nextProps, nextState){
-		return nextProps.show !== this.props.show;
+		return nextProps.show !== this.props.show || nextProps.children !== this.props.children;
 	}
 	componentWillUpdate(){
 		console.log('[Modal] Will Update')
