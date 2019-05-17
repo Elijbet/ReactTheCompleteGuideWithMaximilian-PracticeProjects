@@ -64,4 +64,8 @@ You will also see any lint errors in the console.
 * Navigating to the Contact Data
 * Order Submission & Passing Data between pages.
 > 'render' is passed a function with the `ContactData` component to be rendered.  Using  `rendeer` in place of `component` allows props tp be passed along with the component.  `{...props}` passes all props onto the `ContactData` component, allowing that component access to `props.history.push()`
+* Adding an orders page.
+* Implementing Navigation Links.
+* Fetching Orders.
+* Outputting the orders.
 
