@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
-// import axios from 'axios';
 import { Route, NavLink, Switch, Redirect } from 'react-router-dom';
 
 import './Blog.css';
 import Posts from './Posts/Posts';
-import NewPost from './NewPost/NewPost';
+import asyncComponent from '../../hoc/AsyncComponent';
+
+const AsyncNewPost = asyncComponent(() => {
+    return import('./NewPost/NewPost');
+});
 
 class Blog extends Component {
+    state = {
+        // sample demo of how to use auth check guard to render a component conditionally }
+        auth: true
+    }
     render () {
         return (
             <div className="Blog">
@@ -14,7 +21,7 @@ class Blog extends Component {
                     <nav>
                         <ul>
                             <li><NavLink 
-                                to="/" 
+                                to="/posts" 
                                 exact
                                 activeClassName="active">Posts</NavLink></li>
                             <li><NavLink to={{
@@ -28,9 +35,10 @@ class Blog extends Component {
                 {/* <Route path="/" exact render={() => <h1>Home</h1>} />
                 <Route path="/" render={() => <h1>Home 2</h1>} /> */}
                 <Switch>
-                    <Route path="/new-post" component={NewPost} />
-                    <Route path="/" component={Posts} />
-                    <Redirect from="/posts" to="/"/>
+                    { this.state.auth ? <Route path="/new-post" component={AsyncNewPost} /> : null }
+                    <Route path="/posts" component={Posts} />
+                    <Route render={() => <h1>Not found</h1>} />
+                    {/*<Redirect from="/posts" to="/"/>*/}
                 </Switch>
             </div>
         );

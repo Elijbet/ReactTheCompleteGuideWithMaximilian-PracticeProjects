@@ -58,5 +58,11 @@ How to remove cached node_modules:
 * Redirecting requests.
 * Conditional redirects. Outside of the switch method we don't use from.
 * Using history prop to redirect pushes it to stack, so you can go back to previous page. Using redirect won't keep the last page history. You can use .replace instead of this.props.history.push('/') and this will do the same as redirect.
+* Navigation guards for authentication purposes.
+* Handling the 404 case (unknown routes).
+* Loading Routes Lazily. 
+>If we look at network tab in dev tools we'll see that we load bundle.js all the time, which is not a good idea. We don't want to load code for a component the user never visits. We need to upload only what we need by 
+'code splittin' or 'lazy loading'. Will only work with config 'create react app', bc it depends on Webpack config. So we need to create a higher order component which will load asynchronously. 
+
 
 

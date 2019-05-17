@@ -29,7 +29,7 @@ class NewPost extends Component {
     render () {
         let redirect = null;
         if(this.state.submitted){
-            redirect = <Redirect to="/" />
+            redirect = <Redirect to="/posts" />
         }
         return (
             <div className="NewPost">
