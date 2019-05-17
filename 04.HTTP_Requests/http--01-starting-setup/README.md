@@ -51,5 +51,12 @@ How to remove cached node_modules:
 * Styling the active route with NavLink, which appends active class to the link.
 * Change the appended class name with activeClassName. You can use activeStyle to apply inline styling to active NavLink.
 * Passing route params and extracting route params.
-* Query params: <Link to="/my-path?start=5">Go to Start
+* Query params: <Link to="/my-path?start=5">Go to Start.
+* how to navigate to another page programmatically, without using the link.
+* Nested routes.
+* Creating dynamic nested routes.
+* Redirecting requests.
+* Conditional redirects. Outside of the switch method we don't use from.
+* Using history prop to redirect pushes it to stack, so you can go back to previous page. Using redirect won't keep the last page history. You can use .replace instead of this.props.history.push('/') and this will do the same as redirect.
+
 

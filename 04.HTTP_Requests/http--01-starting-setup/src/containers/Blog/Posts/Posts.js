@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import axios from '../../../axios';
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 
 import Post from '../../../components/Post/Post';
+import FullPost from '../FullPost/FullPost'
 import './Posts.css';
 
 class Posts extends Component {
@@ -32,6 +33,7 @@ class Posts extends Component {
 
     postSelectedHandler = (id) => {
         this.setState({selectedPostId: id});
+        //how to navigate to another page programmatically, without using the link
         //this.props.history.push({pathname: '/' + id});
     }
     
@@ -50,9 +52,12 @@ class Posts extends Component {
         }
 
         return (
-            <section className="Posts">
-                {posts}
-            </section>
+            <div>
+                <section className="Posts">
+                    {posts}
+                </section>
+                <Route path={this.props.match.url + ':id'} exact component={FullPost} />
+            </div>
         );
     }
 }
