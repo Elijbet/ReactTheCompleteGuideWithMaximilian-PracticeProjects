@@ -68,4 +68,10 @@ You will also see any lint errors in the console.
 * Implementing Navigation Links.
 * Fetching Orders.
 * Outputting the orders.
-
+* Forms and form validation.
+* Creating a custom dynamic input component.
+* Setting up a js config for the form.
+* Dynamically create inputs based on JS config.
+* Adding a dropdown component.
+* Handling User Input.
+* Handling Form Submission.
