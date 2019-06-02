@@ -75,3 +75,6 @@ You will also see any lint errors in the console.
 * Adding a dropdown component.
 * Handling User Input.
 * Handling Form Submission.
+* Adding Custom Form Validation. Vue framework has one, but React doesn't. You have to build it.
+* Fixing a common validation gotcha: multiple checks will only return the last result; workaround.
+* Adding validation feedback.
